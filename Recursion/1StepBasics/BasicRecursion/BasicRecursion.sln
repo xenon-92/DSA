@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1SumofAnArray", "1SumofAnAr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Factorial", "2Factorial\2Factorial.csproj", "{C373FD5C-5DAC-45DB-8E94-51BF43E6AAAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1Practise", "1Practise\1Practise.csproj", "{63CCAABE-89F4-4CE6-B29C-7984A4CBDD23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C373FD5C-5DAC-45DB-8E94-51BF43E6AAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C373FD5C-5DAC-45DB-8E94-51BF43E6AAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C373FD5C-5DAC-45DB-8E94-51BF43E6AAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CCAABE-89F4-4CE6-B29C-7984A4CBDD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CCAABE-89F4-4CE6-B29C-7984A4CBDD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CCAABE-89F4-4CE6-B29C-7984A4CBDD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CCAABE-89F4-4CE6-B29C-7984A4CBDD23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
