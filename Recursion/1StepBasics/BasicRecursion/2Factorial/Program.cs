@@ -10,6 +10,17 @@ namespace _2Factorial
     {
         static void Main(string[] args)
         {
+            var res = Fact(5);
+            Console.WriteLine(res);
+            Console.ReadKey();
+        }
+        static int Fact(int n)
+        {
+            if (n==0)
+            {
+                return 1;
+            }
+            return n * Fact(n-1);
         }
     }
 }
