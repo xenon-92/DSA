@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseAString", "ReverseAS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckParenthesis", "CheckParenthesis\CheckParenthesis.csproj", "{D3B83152-2640-4F3A-80B4-32668016FC5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splitter", "Splitter\Splitter.csproj", "{EF980E4A-3A87-470D-90B6-64BCE6AF27E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubstringInAText", "SubstringInAText\SubstringInAText.csproj", "{E0E0D4F6-1206-4ABE-BF82-CAE3727864B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D3B83152-2640-4F3A-80B4-32668016FC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B83152-2640-4F3A-80B4-32668016FC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B83152-2640-4F3A-80B4-32668016FC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF980E4A-3A87-470D-90B6-64BCE6AF27E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF980E4A-3A87-470D-90B6-64BCE6AF27E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF980E4A-3A87-470D-90B6-64BCE6AF27E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF980E4A-3A87-470D-90B6-64BCE6AF27E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E0D4F6-1206-4ABE-BF82-CAE3727864B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E0D4F6-1206-4ABE-BF82-CAE3727864B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E0D4F6-1206-4ABE-BF82-CAE3727864B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E0D4F6-1206-4ABE-BF82-CAE3727864B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
