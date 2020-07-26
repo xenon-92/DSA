@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 //A text is given.Write a program that modifies the casing of letters to
@@ -15,33 +16,34 @@ namespace UpperCaseProblem
         {
             //string str = Console.ReadLine();
             string str = "We are living in a <upcase>yellow submarine</upcase>. We don't have <upcase>anything</upcase> else.";
-            string result = UpCase(str);
+            string rgx = "<\\/{0,1}\\w+>";
+            string replaced = Regex.Replace(str,rgx,"|");
+            string result = UpperCase(replaced);
             Console.WriteLine(result);
             Console.ReadKey();
+            
         }
-        static string UpCase(string str)
+        static string UpperCase(string str)
         {
-            string start = "<upcase>";
-            string end = "</upcase>";
-            int startIndx = str.IndexOf(start);
-            int endIndex = str.IndexOf(end);
-            StringBuilder sb = new StringBuilder(str);
-            while (startIndx!=-1 && endIndex!=-1)
+            StringBuilder sb = new StringBuilder(str.Length);
+            bool isUpper = false;
+            for (int i = 0; i < str.Length; i++)
             {
-                for (int i = startIndx+7; i < endIndex; i++)
+                if (str[i] == '|')
                 {
-                    sb[i] = char.ToUpper(str[i]);
+                    isUpper = isUpper == false ? true : false;
+                    continue;
                 }
-                startIndx = str.IndexOf(start, startIndx+1);
-                endIndex = str.IndexOf(end, endIndex+1);
+                if (isUpper)
+                {
+                    sb.Append(char.ToUpper(str[i]));
+                }
+                else
+                {
+                    sb.Append(str[i]);
+                }
             }
-            string[] ptr = sb.ToString().Split(new string[] { start,end},StringSplitOptions.RemoveEmptyEntries);
-            StringBuilder sbr = new StringBuilder();
-            foreach (var item in ptr)
-            {
-                sbr.Append(item);
-            }
-            return sbr.ToString();
+            return sb.ToString();
         }
     }
 }
