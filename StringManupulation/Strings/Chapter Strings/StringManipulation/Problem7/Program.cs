@@ -10,8 +10,9 @@ namespace Problem7
     {
         static void Main(string[] args)
         {
-            string MyString = "Hello World!";
-            Console.WriteLine(MyString.PadLeft(10, '-'));
+            string str = Console.ReadLine();
+            str = str.PadRight(20,'*');
+            Console.WriteLine(str);
             Console.ReadKey();
         }
     }
